@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LP Europejskie — Real Estate &amp; Investments</title>
+  <meta name="description" content="Boutique luxury real estate and investment advisory in Poland and Portugal: Warsaw, Kraków, Gdańsk, Wrocław, the Algarve and the Douro Valley.">
+  <meta name="theme-color" content="#0F0F0F">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!--
+    PLACEHOLDER PHOTOS — Unsplash (free licence). Replace with licensed property photography.
+    Vilamoura villa: Frederico Ferreira · Estoi manor: Gabrielle Polita · Porto villa: Ayrton
+    Douro vineyards: Maksym Kaharlytskyi · Warsaw sunset: Adam Borkowski · Palace of Culture: Karolis Milišauskas
+    To swap a photo, change the ID in the img src (images.unsplash.com/photo-<ID>) or point src at your own file.
+  -->
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ── Utility bar: cities · valuation · language · currency ───────────── -->
+  <div class="utility">
+    <div class="container utility__inner">
+      <p class="utility__cities" data-i18n="cities">Warsaw · Kraków · Gdańsk · Algarve · Douro</p>
+      <div class="utility__tools">
+        <a class="utility__link" href="#valuation" data-open-sheet data-i18n="valuation">Property valuation</a>
+        <div class="seg" data-seg="lang" role="group" aria-label="Language" data-i18n-aria-label="aria.lang">
+          <button type="button" data-value="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-value="pl" aria-pressed="false" lang="pl">PL</button>
+        </div>
+        <div class="seg" data-seg="currency" role="group" aria-label="Currency" data-i18n-aria-label="aria.currency">
+          <button type="button" data-value="EUR" aria-pressed="true">EUR €</button>
+          <button type="button" data-value="PLN" aria-pressed="false">PLN zł</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Header ──────────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="LP Europejskie — Real Estate &amp; Investments">
+        <img src="assets/logo-gold.png" width="1200" height="321" alt="LP Europejskie — Real Estate &amp; Investments">
+      </a>
+
+      <nav class="nav" aria-label="Primary" data-i18n-aria-label="aria.primary">
+        <a href="#featured" data-i18n="nav.buy">Buy</a>
+        <a href="#valuation" data-open-sheet data-i18n="nav.sell">Sell</a>
+        <a href="#developments" data-i18n="nav.developments">Developments</a>
+        <a href="#destinations" data-i18n="nav.destinations">Destinations</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#private-search" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--outline-gold" href="#valuation" data-open-sheet data-i18n="cta.sell">Sell with us</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" data-i18n-aria-label="aria.menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-sheet" id="menu" hidden>
+      <a href="#featured" data-i18n="nav.buy">Buy</a>
+      <a href="#valuation" data-open-sheet data-i18n="nav.sell">Sell</a>
+      <a href="#developments" data-i18n="nav.developments">Developments</a>
+      <a href="#destinations" data-i18n="nav.destinations">Destinations</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#private-search" data-i18n="nav.contact">Contact</a>
+      <a class="btn btn--outline-gold" href="#valuation" data-open-sheet data-i18n="cta.sell">Sell with us</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--gold" data-reveal data-i18n="hero.eyebrow">Luxury real estate · Poland &amp; Europe</p>
+          <h1 id="hero-title" data-reveal style="--d:1" data-i18n-html="hero.title">Exceptional Properties.<br><em>European Perspective.</em></h1>
+          <p class="hero__lede" data-reveal style="--d:2" data-i18n="hero.lede">A boutique firm connecting international investors with distinguished homes and lasting-value assets across Poland and Portugal.</p>
+          <div class="hero__actions" data-reveal style="--d:3">
+            <a class="btn btn--gold" href="#featured" data-i18n="hero.cta1">Explore properties</a>
+            <a class="btn btn--ghost" href="#developments" data-i18n="hero.cta2">New developments</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="https://images.unsplash.com/photo-1624322578153-d0bb3cfea7b8?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1624322578153-d0bb3cfea7b8?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1624322578153-d0bb3cfea7b8?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1624322578153-d0bb3cfea7b8?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 55vw, 100vw" width="1200" height="1500" fetchpriority="high" decoding="async"
+               alt="Warsaw skyline at sunset" data-i18n-alt="hero.alt">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Property finder ───────────────────────────────────────────────── -->
+    <section class="finder" aria-label="Property search" data-i18n-aria-label="aria.finder">
+      <div class="container">
+        <div class="finder__top">
+          <div class="tabs" role="group" aria-label="Search mode" data-i18n-aria-label="aria.mode" data-tabs>
+            <button type="button" data-mode="buy" aria-pressed="true" data-i18n="tab.buy">Buy</button>
+            <button type="button" data-mode="rent" aria-pressed="false" data-i18n="tab.rent">Rent</button>
+            <span class="tabs__bar" aria-hidden="true"></span>
+          </div>
+          <a class="section__link section__link--gold" href="#developments" data-i18n="finder.dev">View developments →</a>
+        </div>
+
+        <form class="finder__form" data-search>
+          <div class="chips" role="group" aria-label="Property type" data-i18n-aria-label="aria.type" data-chips>
+            <button type="button" class="chip" aria-pressed="true" data-i18n="type.apartments">Apartments</button>
+            <button type="button" class="chip" aria-pressed="false" data-i18n="type.houses">Houses</button>
+            <button type="button" class="chip" aria-pressed="false" data-i18n="type.penthouses">Penthouses</button>
+            <button type="button" class="chip" aria-pressed="false" data-i18n="type.villas">Golf villas</button>
+            <button type="button" class="chip" aria-pressed="false" data-i18n="type.land">Land</button>
+          </div>
+
+          <div class="finder__fields">
+            <div class="field">
+              <label for="f-location" data-i18n="f.location">Location</label>
+              <select id="f-location" name="location">
+                <option value="all" data-i18n="loc.all">All markets</option>
+                <option value="warsaw" data-i18n="loc.warsaw">Warsaw</option>
+                <option value="krakow" data-i18n="loc.krakow">Kraków</option>
+                <option value="gdansk" data-i18n="loc.gdansk">Gdańsk &amp; Sopot</option>
+                <option value="wroclaw" data-i18n="loc.wroclaw">Wrocław</option>
+                <option value="algarve" data-i18n="loc.algarve">Algarve</option>
+                <option value="douro" data-i18n="loc.douro">Douro Valley</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-beds" data-i18n="f.bedrooms">Bedrooms</label>
+              <select id="f-beds" name="bedrooms">
+                <option value="" data-i18n="beds.any">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-price" data-i18n="f.price">Price</label>
+              <select id="f-price" name="price"><option value="">Any price</option></select>
+            </div>
+            <button class="btn btn--gold" type="submit" data-i18n="f.search">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── Featured properties ───────────────────────────────────────────── -->
+    <section class="section section--light" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <p class="eyebrow" data-i18n="feat.eyebrow">Featured properties</p>
+            <h2 class="h2" id="featured-title" data-i18n="feat.title">Selected by our advisors</h2>
+          </div>
+          <div class="section__aside">
+            <a class="section__link" href="#" data-i18n="feat.all">View all properties</a>
+            <p class="section__note" data-i18n="feat.note">Sample listings for design preview</p>
+          </div>
+        </div>
+
+        <div class="listings">
+          <article class="card" data-reveal>
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="900" loading="lazy" decoding="async" alt="White villa with a pool beside the golf course in Vilamoura, Algarve" data-i18n-alt="p1.alt"></div>
+            <p class="card__meta" data-i18n="p1.meta">Villa · Algarve, Vilamoura</p>
+            <h3 class="card__title"><a href="#" data-i18n="p1.title">Fairway villa near the coast</a></h3>
+            <p class="card__spec" data-beds="4" data-baths="4" data-area="310">4 bedrooms · 4 bathrooms · 310 m²</p>
+            <p class="card__price" data-eur="2400000">€2,400,000</p>
+          </article>
+
+          <article class="card" data-reveal style="--d:1">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1719931582798-eb86004b1273?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1719931582798-eb86004b1273?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1719931582798-eb86004b1273?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1719931582798-eb86004b1273?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="900" loading="lazy" decoding="async" alt="Manor house with clipped hedges and formal gardens in Estoi, Algarve" data-i18n-alt="p2.alt"></div>
+            <p class="card__meta" data-i18n="p2.meta">Manor · Algarve, Estoi</p>
+            <h3 class="card__title"><a href="#" data-i18n="p2.title">Manor house with formal gardens</a></h3>
+            <p class="card__spec" data-beds="5" data-baths="4" data-area="420">5 bedrooms · 4 bathrooms · 420 m²</p>
+            <p class="card__price" data-eur="1850000">€1,850,000</p>
+          </article>
+
+          <article class="card" data-reveal style="--d:2">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1662311596497-113f2587f15c?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1662311596497-113f2587f15c?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1662311596497-113f2587f15c?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1662311596497-113f2587f15c?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="900" loading="lazy" decoding="async" alt="Large white quinta on a hillside in the Douro Valley" data-i18n-alt="p3.alt"></div>
+            <p class="card__meta" data-i18n="p3.meta">Quinta · Douro, Pinhão</p>
+            <h3 class="card__title"><a href="#" data-i18n="p3.title">Hillside quinta above the river</a></h3>
+            <p class="card__spec" data-beds="6" data-baths="5" data-area="540">6 bedrooms · 5 bathrooms · 540 m²</p>
+            <p class="card__price" data-eur="1650000">€1,650,000</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1603657289433-e4983d2114b9?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1603657289433-e4983d2114b9?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1603657289433-e4983d2114b9?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1603657289433-e4983d2114b9?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="900" loading="lazy" decoding="async" alt="Terraced vineyards in the Douro Valley under a blue sky" data-i18n-alt="p4.alt"></div>
+            <p class="card__meta" data-i18n="p4.meta">Wine estate · Douro, Peso da Régua</p>
+            <h3 class="card__title"><a href="#" data-i18n="p4.title">Wine estate among the terraces</a></h3>
+            <p class="card__spec" data-beds="5" data-baths="5" data-area="610">5 bedrooms · 5 bathrooms · 610 m²</p>
+            <p class="card__price" data-eur="3150000">€3,150,000</p>
+          </article>
+
+          <article class="card" data-reveal style="--d:1">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1652349597652-cdbcb8cf4010?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1652349597652-cdbcb8cf4010?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1652349597652-cdbcb8cf4010?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1652349597652-cdbcb8cf4010?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="900" loading="lazy" decoding="async" alt="Art Deco villa with a pool in front, Porto" data-i18n-alt="p5.alt"></div>
+            <p class="card__meta" data-i18n="p5.meta">Villa · Porto, Serralves</p>
+            <h3 class="card__title"><a href="#" data-i18n="p5.title">Art Deco villa with garden pool</a></h3>
+            <p class="card__spec" data-beds="4" data-baths="3" data-area="340">4 bedrooms · 3 bathrooms · 340 m²</p>
+            <p class="card__price" data-eur="2950000">€2,950,000</p>
+          </article>
+
+          <article class="card" data-reveal style="--d:2">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1661324797204-20384e193a47?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1661324797204-20384e193a47?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1661324797204-20384e193a47?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1661324797204-20384e193a47?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="900" loading="lazy" decoding="async" alt="House on a green hillside above the Douro river" data-i18n-alt="p6.alt"></div>
+            <p class="card__meta" data-i18n="p6.meta">House · Douro, Lamego</p>
+            <h3 class="card__title"><a href="#" data-i18n="p6.title">Hillside house with river views</a></h3>
+            <p class="card__spec" data-beds="3" data-baths="3" data-area="210">3 bedrooms · 3 bathrooms · 210 m²</p>
+            <p class="card__price" data-eur="890000">€890,000</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── New developments ──────────────────────────────────────────────── -->
+    <section class="section section--dark" id="developments" aria-labelledby="dev-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <p class="eyebrow eyebrow--gold" data-i18n="dev.eyebrow">New developments</p>
+            <h2 class="h2" id="dev-title" data-i18n="dev.title">Long-term value, built to last</h2>
+          </div>
+          <a class="section__link section__link--gold" href="#" data-i18n="dev.all">All developments</a>
+        </div>
+
+        <div class="dev-grid">
+          <article class="dev" data-reveal>
+            <div class="dev__media"><img src="https://images.unsplash.com/photo-1554113090-893c59188d76?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1554113090-893c59188d76?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1554113090-893c59188d76?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1554113090-893c59188d76?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="800" loading="lazy" decoding="async" alt="Palace of Culture and Science towering over central Warsaw" data-i18n-alt="d1.alt"></div>
+            <div class="dev__body">
+              <p class="dev__region" data-i18n="d1.region">Warsaw</p>
+              <h3 class="dev__title"><a href="#">Skyline Residences</a></h3>
+              <p class="dev__spec" data-bed-min="1" data-bed-max="4" data-year="2028">1 – 4 bedrooms · Completion 2028</p>
+              <p class="dev__price"><span data-i18n="dev.from">From</span> <span class="price" data-eur="340000">€340,000</span></p>
+            </div>
+          </article>
+
+          <article class="dev" data-reveal style="--d:1">
+            <div class="dev__media"><img src="https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1717167398817-121e3c283dbb?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="800" loading="lazy" decoding="async" alt="Villa and pool overlooking a golf course in the Algarve" data-i18n-alt="d2.alt"></div>
+            <div class="dev__body">
+              <p class="dev__region" data-i18n="d2.region">Algarve</p>
+              <h3 class="dev__title"><a href="#">The Fairways Collection</a></h3>
+              <p class="dev__spec" data-bed-min="2" data-bed-max="5" data-year="2027">2 – 5 bedrooms · Completion 2027</p>
+              <p class="dev__price"><span data-i18n="dev.from">From</span> <span class="price" data-eur="980000">€980,000</span></p>
+            </div>
+          </article>
+
+          <article class="dev" data-reveal style="--d:2">
+            <div class="dev__media"><img src="https://images.unsplash.com/photo-1572942560575-2e3142767543?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1572942560575-2e3142767543?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1572942560575-2e3142767543?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1572942560575-2e3142767543?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 33vw, 78vw" width="1200" height="800" loading="lazy" decoding="async" alt="Aerial view of brown and white houses beside the water in Gdańsk" data-i18n-alt="d3.alt"></div>
+            <div class="dev__body">
+              <p class="dev__region" data-i18n="d3.region">Gdańsk</p>
+              <h3 class="dev__title"><a href="#">Baltic Gardens</a></h3>
+              <p class="dev__spec" data-bed-min="1" data-bed-max="3" data-year="2028">1 – 3 bedrooms · Completion 2028</p>
+              <p class="dev__price"><span data-i18n="dev.from">From</span> <span class="price" data-eur="410000">€410,000</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Destinations ──────────────────────────────────────────────────── -->
+    <section class="section section--light" id="destinations" aria-labelledby="dest-title">
+      <div class="container destinations__grid">
+        <div class="destinations__intro" data-reveal>
+          <p class="eyebrow" data-i18n="dest.eyebrow">Destinations</p>
+          <h2 class="h2" id="dest-title" data-i18n="dest.title">Six markets, one standard</h2>
+          <p class="lede" data-i18n="dest.lede">From Warsaw's skyline to the Algarve's golf coast, each market is covered by an advisor who lives and works there.</p>
+        </div>
+
+        <ul class="dest-list" data-reveal style="--d:1">
+          <li><a class="dest" href="#featured"><span class="dest__name" data-i18n="loc.warsaw">Warsaw</span><span class="dest__desc" data-i18n="dest.warsaw">Capital living, skyline views, strongest investor demand</span></a></li>
+          <li><a class="dest" href="#featured"><span class="dest__name" data-i18n="loc.krakow">Kraków</span><span class="dest__desc" data-i18n="dest.krakow">Historic centre apartments and restored townhouses</span></a></li>
+          <li><a class="dest" href="#featured"><span class="dest__name" data-i18n="loc.gdansk">Gdańsk &amp; Sopot</span><span class="dest__desc" data-i18n="dest.gdansk">Baltic coast homes and holiday residences</span></a></li>
+          <li><a class="dest" href="#featured"><span class="dest__name" data-i18n="loc.wroclaw">Wrocław</span><span class="dest__desc" data-i18n="dest.wroclaw">Design-led city living near the river</span></a></li>
+          <li><a class="dest" href="#featured"><span class="dest__name" data-i18n="loc.algarve">Algarve</span><span class="dest__desc" data-i18n="dest.algarve">Golf villas and sea-view residences in Portugal</span></a></li>
+          <li><a class="dest" href="#featured"><span class="dest__name" data-i18n="loc.douro">Douro Valley</span><span class="dest__desc" data-i18n="dest.douro">Wine estates and river-view quintas in Portugal</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Private search ────────────────────────────────────────────────── -->
+    <section class="section private" id="private-search" aria-labelledby="private-title">
+      <div class="container private__grid">
+        <div data-reveal>
+          <p class="eyebrow eyebrow--gold" data-i18n="priv.eyebrow">Private search</p>
+          <h2 class="h2" id="private-title" data-i18n="priv.title">Can't find the right property?</h2>
+          <p class="lede" data-i18n="priv.lede">Many of our homes are never advertised. Describe what you want and an advisor will reply within one working day.</p>
+        </div>
+
+        <form class="form-grid" data-demo-form data-reveal style="--d:1">
+          <div class="field">
+            <label for="p-brief" data-i18n="priv.label">What are you looking for?</label>
+            <textarea class="input" id="p-brief" name="brief" rows="4" required></textarea>
+          </div>
+          <div class="field">
+            <label for="p-email" data-i18n="priv.email">Email</label>
+            <input class="input" id="p-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <p class="form-note" data-i18n="priv.note">By sending this request you agree to our privacy policy.</p>
+          <div class="form-actions">
+            <button class="btn btn--gold" type="submit" data-i18n="priv.send">Send request</button>
+            <p class="form-status" role="status" hidden data-i18n="form.thanks">Thank you. An advisor will be in touch within one working day.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────────────────────── -->
+    <section class="section section--light about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div data-reveal>
+          <p class="eyebrow" data-i18n="about.eyebrow">About LP Europejskie</p>
+          <h2 class="h2" id="about-title" data-i18n="about.title">A trusted partner for premium real estate and lifestyle investment</h2>
+          <p class="lede" data-i18n="about.lede">Local expertise, a global view and a personal approach, from the first conversation to the closing.</p>
+          <div class="about__media">
+            <img src="https://images.unsplash.com/photo-1608649944716-228404a0a8bb?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1608649944716-228404a0a8bb?auto=format&amp;fit=crop&amp;q=75&amp;w=640 640w, https://images.unsplash.com/photo-1608649944716-228404a0a8bb?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1608649944716-228404a0a8bb?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w" sizes="(min-width: 900px) 460px, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Golden cliffs meeting the blue sea on the Algarve coast" data-i18n-alt="about.alt">
+          </div>
+        </div>
+
+        <dl class="values" data-reveal style="--d:1">
+          <div class="value"><dt data-i18n="v1.name">Trust</dt><dd data-i18n="v1.desc">Long-term relationships build real value.</dd></div>
+          <div class="value"><dt data-i18n="v2.name">Excellence</dt><dd data-i18n="v2.desc">In every detail, from search to closing.</dd></div>
+          <div class="value"><dt data-i18n="v3.name">Integrity</dt><dd data-i18n="v3.desc">Transparent, honest, always.</dd></div>
+          <div class="value"><dt data-i18n="v4.name">Global vision</dt><dd data-i18n="v4.desc">Connecting markets, creating opportunities.</dd></div>
+          <div class="value"><dt data-i18n="v5.name">Sustainability</dt><dd data-i18n="v5.desc">Investing in a better future.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ── Newsletter ────────────────────────────────────────────────────── -->
+    <section class="newsletter" aria-labelledby="news-title">
+      <div class="container newsletter__inner">
+        <div>
+          <h2 class="h2" id="news-title" data-i18n="news.title">New listings, before they are public</h2>
+          <p class="newsletter__note" data-i18n="news.note">One email a month. Unsubscribe at any time.</p>
+        </div>
+        <form class="newsletter__form" data-demo-form>
+          <label class="visually-hidden" for="n-email" data-i18n="news.label">Email address</label>
+          <input class="input" id="n-email" name="email" type="email" autocomplete="email" placeholder="Your email" data-i18n-placeholder="news.ph" required>
+          <button class="btn btn--gold" type="submit" data-i18n="news.btn">Subscribe</button>
+          <p class="form-status" role="status" hidden data-i18n="news.thanks">Thank you for subscribing.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#top" aria-label="LP Europejskie"><img src="assets/logo-gold.png" width="1200" height="321" alt="LP Europejskie — Real Estate &amp; Investments"></a>
+          <p class="footer__tag" data-i18n="foot.tagline">Exceptional properties. European perspective.</p>
+          <p class="footer__contact" data-i18n="foot.contact">[Address] · [Phone] · [Email]</p>
+        </div>
+
+        <div class="footer__col">
+          <h2 data-i18n="foot.dest">Destinations</h2>
+          <ul>
+            <li><a href="#destinations" data-i18n="loc.warsaw">Warsaw</a></li>
+            <li><a href="#destinations" data-i18n="loc.krakow">Kraków</a></li>
+            <li><a href="#destinations" data-i18n="foot.gdansk">Gdańsk</a></li>
+            <li><a href="#destinations" data-i18n="loc.wroclaw">Wrocław</a></li>
+            <li><a href="#destinations" data-i18n="loc.algarve">Algarve</a></li>
+            <li><a href="#destinations" data-i18n="loc.douro">Douro Valley</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 data-i18n="foot.company">Company</h2>
+          <ul>
+            <li><a href="#about" data-i18n="foot.about">About us</a></li>
+            <li><a href="#developments" data-i18n="foot.dev">Developments</a></li>
+            <li><a href="#valuation" data-open-sheet data-i18n="foot.sell">Sell with us</a></li>
+            <li><a href="#" data-i18n="foot.careers">Careers</a></li>
+            <li><a href="#private-search" data-i18n="foot.contact2">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 data-i18n="foot.follow">Follow</h2>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© LP Europejskie Real Estate &amp; Investments</p>
+        <nav class="footer__legal" aria-label="Legal" data-i18n-aria-label="aria.legal">
+          <a href="#" data-i18n="foot.terms">Terms</a>
+          <a href="#" data-i18n="foot.privacy">Privacy policy</a>
+          <a href="#" data-i18n="foot.cookies">Cookies</a>
+          <a href="#" data-i18n="foot.complaints">Complaints</a>
+        </nav>
+        <p class="rate-note" data-rate-note></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Valuation sheet ─────────────────────────────────────────────────── -->
+  <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+    <div class="sheet__body">
+      <button class="sheet__close" type="button" data-close-sheet aria-label="Close" data-i18n-aria-label="aria.close">
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+      <p class="eyebrow" data-i18n="valuation">Property valuation</p>
+      <h2 class="h2" id="sheet-title" data-i18n="sheet.title">Request a property valuation</h2>
+      <p class="lede" data-i18n="sheet.lede">Tell us about your property and an advisor will reply within one working day.</p>
+
+      <form class="form-grid" data-demo-form>
+        <div class="field">
+          <label for="s-address" data-i18n="sheet.address">Property address</label>
+          <input class="input" id="s-address" name="address" type="text" autocomplete="street-address" required>
+        </div>
+        <div class="field">
+          <label for="s-email" data-i18n="priv.email">Email</label>
+          <input class="input" id="s-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="s-phone" data-i18n="sheet.phone">Phone (optional)</label>
+          <input class="input" id="s-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-actions">
+          <button class="btn btn--gold" type="submit" data-i18n="sheet.submit">Request valuation</button>
+          <p class="form-status" role="status" hidden data-i18n="form.thanks">Thank you. An advisor will be in touch within one working day.</p>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
